@@ -10,12 +10,10 @@ class StudentCubitView extends StatelessWidget {
   final addressController = TextEditingController();
 
   StudentCubitView({super.key});
-  
+
   @override
   Widget build(BuildContext context) {
-    return BlocProvider(
-      create: (_) => StudentCubit(),
-      child: Scaffold(
+    return Scaffold(
         appBar: AppBar(title: const Text("Student Cubit")),
         body: Padding(
           padding: const EdgeInsets.all(16.0),
@@ -90,7 +88,6 @@ class StudentCubitView extends StatelessWidget {
             ],
           ),
         ),
-      ),
     );
   }
 }
